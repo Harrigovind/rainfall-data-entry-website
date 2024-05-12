@@ -36,49 +36,47 @@ document.getElementById('dateButton').addEventListener('click',function(){
 function displayRainfallData(data) {
     var container = document.getElementById('rainfall-container');
 
-    // Clear previous content in the container
     container.innerHTML = '';
 
-    // Create a table element
     var table = document.createElement('table');
-    table.classList.add('rainfall-table'); // Optional: Add a class for styling purposes
+    table.classList.add('rainfall-table');
 
-    // Create a table header row
+
     var headerRow = document.createElement('tr');
 
-    // Create table header cells for Station and Rainfall
+
     var stationHeader = document.createElement('th');
     stationHeader.textContent = 'Station';
     var rainfallHeader = document.createElement('th');
     rainfallHeader.textContent = 'Rainfall';
 
-    // Append header cells to the header row
+
     headerRow.appendChild(stationHeader);
     headerRow.appendChild(rainfallHeader);
 
-    // Append the header row to the table
+
     table.appendChild(headerRow);
 
-    // Iterate over each entry in the data array
+
     data.forEach(function(entry) {
-        // Create a new table row
+
         var row = document.createElement('tr');
 
-        // Create table cells for Station and Rainfall
+
         var stationCell = document.createElement('td');
         stationCell.textContent = entry.station;
         var rainfallCell = document.createElement('td');
         rainfallCell.textContent = entry.rainfall;
 
-        // Append cells to the row
+
         row.appendChild(stationCell);
         row.appendChild(rainfallCell);
 
-        // Append the row to the table
+
         table.appendChild(row);
     });
 
-    // Append the table to the container
+
     container.appendChild(table);
 }
 
@@ -98,7 +96,7 @@ function getStationNames() {
     var action = 'get_station_data';
     var GETurl = `${url}?action=${action}`;
     fetch(GETurl, {
-        method: 'GET', // Specify GET method
+        method: 'GET',
         
     })
     .then(response => response.text())
@@ -185,11 +183,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert("Couldn't save data due to "+data.status);
             }
             
-            // Handle the response data as needed
+
         })
         .catch(error => {
             console.error('Error:', error);
-            // Handle errors
+
         });
 
         rainfallAttributes.classList.add('hidden')
