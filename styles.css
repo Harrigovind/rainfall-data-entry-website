@@ -136,24 +136,24 @@ body{
 }
 
 #rainfall-container {
-    text-align: center; /* Center the table horizontally */
+    text-align: center;
     width: 500px;
     margin-left: 30%;
     margin-top: 50px;
 }
 
-/* CSS styles to increase the size of cells */
+
 .rainfall-table {
     border-collapse: collapse;
-    border: 1px solid black ; /* Collapse borders between cells */
-    width: 100%; /* Set table width to 100% of container */
+    border: 1px solid black ;
+    width: 100%;
     background-color: #cafcfe;
 }
 
 .rainfall-table th,
 .rainfall-table td {
     font-size: 20px;
-    padding: 10px; /* Add padding to cells for spacing */
+    padding: 10px;
 }
 
 .hidden {
