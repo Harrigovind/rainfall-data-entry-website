@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Data Entry</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="getStationNames()">
+    <div class="" id="headerDiv">
+        <h1 class="mainHeader" id="mainHeader">Rainfall Data Entry</h1>
+    </div>
+    <button class="dummy" id="dummyButton" onclick="start()">Proceed</button>
+    <div class="dateform hidden" id="dateform">
+        <input type="date" id="date" name="date" class="date">
+        <button class="dateButton" id="dateButton">Get Data</button>
+    </div>
+    <form id="rainfall-form">
+
+        
+        
+        <div class="stationform hidden" id="stationform">
+            <select id="stationDropdown" name="station" class="stationDropdown">
+                <option value="" disabled selected hidden>Select Station</option>
+                <option value="create_station">Create Station</option>
+            </select>
+            <button type="submit" id="submitButton" class="submitButton">Submit</button>
+        </div>
+        
+        <div id="station-attributes" class="stationAttributes hidden">
+            <!-- Station attributes will be displayed here when "Create Station" is selected -->
+            <!-- Add station attribute inputs here -->
+
+            <label for="name" class="attributeLabel">Name</label>
+            <input type="text" class="attributeInput" id="stationName" name="name" placeholder="Enter Station Name">
+            <label for="owner" class="attributeLabel">Owner</label>
+            <input type="text" class="attributeInput" id="stationOwner" name="owner" placeholder="Enter Station Owner">
+        </div>
+
+        <div id="rainfall-attributes" class="rainfallAttributes hidden">
+            
+            
+            <label for="rainfall" class="attributeLabel">Rainfall (mm)</label>
+            <input type="number" class="attributeInput" id="rainfall" name="rainfall" placeholder="Enter Rainfall(mm)">
+        </div>
+        
+        
+    </form>
+        <div class="rainfall-container" id="rainfall-container"></div>
+    
+</body>
+</html>

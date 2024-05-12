@@ -1,0 +1,168 @@
+body{
+    background: #8df9ff;
+}
+
+.mainHeader{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 50px;
+}
+
+.headerRunning{
+    margin-top: 50px;
+}
+
+.dummy{
+    width: 200px;
+    height: 50px;
+    margin-left: 43%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color:azure;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dummy:hover{
+    cursor: pointer;
+}
+
+.dummy:active{
+    background-color: azure;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.dateform{
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.date{
+    margin-left: 40px;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background: rgb(196, 226, 227);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.date:hover{
+    cursor: pointer;
+}
+
+.dateButton{
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(196, 226, 227);
+    color:rgb(5, 5, 5);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dateButton:hover{
+    cursor: pointer;
+}
+
+.stationform{
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+.stationDropdown{
+    margin-left:40px;
+    background-color: rgb(196, 226, 227);
+    color: black;
+    font-size: 16px;
+    width:150px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stationDropdown:hover{
+    cursor: pointer;
+}
+
+.submitButton{
+    width: 100px;
+    height: 30px;
+    margin-left:50%;
+    border-radius: 10px;
+    background-color: rgb(196, 226, 227);
+    color:rgb(5, 5, 5);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submitButton:hover{
+    cursor: pointer;
+}
+
+.stationAttributes{
+    margin-left:25%;
+    color: black;
+    font-size: 16px;
+    width:150px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+}
+
+.rainfallAttributes{
+    margin-left:30%;
+    color: black;
+    font-size: 16px;
+    width:150px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+
+}
+
+.attributeLabel{
+    margin-left: 50px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+
+}
+
+#rainfall-container {
+    text-align: center; /* Center the table horizontally */
+    width: 500px;
+    margin-left: 30%;
+    margin-top: 50px;
+}
+
+/* CSS styles to increase the size of cells */
+.rainfall-table {
+    border-collapse: collapse;
+    border: 1px solid black ; /* Collapse borders between cells */
+    width: 100%; /* Set table width to 100% of container */
+    background-color: #cafcfe;
+}
+
+.rainfall-table th,
+.rainfall-table td {
+    font-size: 20px;
+    padding: 10px; /* Add padding to cells for spacing */
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar{
+    background-color: rgb(209, 255, 240);
+    height: 120px;
+    text-align: center;
+    margin-top: 0px;
+}
